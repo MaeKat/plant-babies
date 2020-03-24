@@ -7,6 +7,6 @@ verify_ssl = true
 
 [packages]
 django = "*"
-
+django-oscar = "*"
 [requires]
 python_version = "3.8.2"
