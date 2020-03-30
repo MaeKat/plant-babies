@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "16e4b2fb87e42280f12988597dd4a917b9c26ee5e6899cfbdc59918bd5dca450"
+            "sha256": "92c66a57757c1d43a65ea8a643e09df25aecba216adc5ffa931b7897033a147c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -22,6 +22,13 @@
                 "sha256:d670ea0b10f8b723672d3a6abeb87b565b244da220d76b4dba1b66269ec152d4"
             ],
             "version": "==2.8.0"
+        },
+        "dj-database-url": {
+            "hashes": [
+                "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163",
+                "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"
+            ],
+            "version": "==0.5.0"
         },
         "django": {
             "hashes": [
@@ -75,6 +82,14 @@
                 "sha256:f80bff4a8a59b278bb277a405a76a8b9a884e4bae7a6c70e78a39c626cd1c836"
             ],
             "version": "==1.4.8"
+        },
+        "djangocms-installer": {
+            "hashes": [
+                "sha256:26ec76f6ef951a2bfc7b8b0154459450df77fa979dfad0b6e21ba8591f923254",
+                "sha256:ae4447a2d378f9da67d6776505ceddf8a0486fe17ba8f75d9736da761cc68ebf"
+            ],
+            "index": "pypi",
+            "version": "==1.2.1"
         },
         "factory-boy": {
             "hashes": [
@@ -131,6 +146,13 @@
             ],
             "version": "==1.5"
         },
+        "pycountry": {
+            "hashes": [
+                "sha256:3c57aa40adcf293d59bebaffbe60d8c39976fba78d846a018dc0c2ec9c6cb3cb"
+            ],
+            "index": "pypi",
+            "version": "==19.8.18"
+        },
         "python-dateutil": {
             "hashes": [
                 "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c",
@@ -165,6 +187,13 @@
                 "sha256:bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93"
             ],
             "version": "==1.3"
+        },
+        "tzlocal": {
+            "hashes": [
+                "sha256:11c9f16e0a633b4b60e1eede97d8a46340d042e67b670b290ca526576e039048",
+                "sha256:949b9dd5ba4be17190a80c0268167d7e6c92c62b30026cf9764caf3e308e5590"
+            ],
+            "version": "==2.0.0"
         }
     },
     "develop": {}

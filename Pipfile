@@ -8,5 +8,8 @@ verify_ssl = true
 [packages]
 django = "*"
 django-oscar = "*"
+pycountry = "*"
+djangocms-installer = "*"
+
 [requires]
 python_version = "3.8.2"
