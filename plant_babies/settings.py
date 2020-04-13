@@ -79,9 +79,14 @@ INSTALLED_APPS = [
     'sorl.thumbnail',
     'django_tables2',
 
-    'pages'
+    'pages',
+    'users',
 ]
 OSCAR_SHOP_NAME = 'BR Backyard'
+
+AUTH_USER_MODEL = 'users.CustomUser'
+
+
 SITE_ID = 1
 
 MIDDLEWARE = [
@@ -180,11 +185,20 @@ USE_L10N = True
 
 USE_TZ = True
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+location = lambda x: os.path.join(
+os.path.dirname(os.path.realpath(__file__)), x)
 
+location = lambda x: os.path.join(
+os.path.dirname(os.path.realpath(__file__)), x)
 STATIC_URL = '/static/'
+STATIC_ROOT = location('static')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = location('media')
+THUMBNAIL_DEBUG = True
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'statics'),

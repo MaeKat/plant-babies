@@ -17,6 +17,8 @@ from django.apps import apps
 #from django.conf.urls import include, url  # < Django-2.0
 from django.urls import include, path  # > Django-2.0
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     # url(r'^i18n/', include('django.conf.urls.i18n')),
@@ -32,4 +34,4 @@ urlpatterns = [
     path('', include(apps.get_app_config('oscar').urls[0])),  # > Django-2.0
 
     path('', include('pages.urls')),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
