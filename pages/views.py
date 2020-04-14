@@ -5,3 +5,6 @@ from django.views.generic import TemplateView
 
 class StoryMapView(TemplateView):
     template_name = 'story-map.html'
+
+class BaseView(TemplateView):
+    template_name = 'base.html'    

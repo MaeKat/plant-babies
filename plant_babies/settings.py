@@ -81,6 +81,7 @@ INSTALLED_APPS = [
 
     'pages',
     'users',
+    'templates',
 ]
 OSCAR_SHOP_NAME = 'BR Backyard'
 
@@ -203,3 +204,5 @@ THUMBNAIL_DEBUG = True
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'statics'),
 ]
+
+
