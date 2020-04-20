@@ -2,7 +2,7 @@
 
 /* Typography */
 body {
-  background: #fff;
+  background: #ee;
 }
 p {
   color: #777;
@@ -1218,7 +1218,7 @@ p.form-success {
 }
 
 
-/* -1120px version */
+-1120px version
 @media screen and (max-width:1120px) {
   .size-1140 .line.content-center-vertical {
       padding: 0 2rem;
@@ -1226,7 +1226,7 @@ p.form-success {
 }
 
 /* -768px version */
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
     .top-nav .right {
       float: none;
     }

@@ -1,0 +1,61 @@
+{% extends "oscar/base.html" %}
+{% load static %}
+
+{% block styles %}
+    {% comment %}
+        If you are developing Oscar's CSS, or overriding Oscar's CSS
+        files in your project, then set OSCAR_USE_LESS = True in your
+        settings file. This will enable the on-the-fly less compiler.
+    {% endcomment %}
+    {% if use_less %}
+        <link rel="stylesheet/less" type="text/css" href="{% static "oscar/less/styles.less" %}" />
+    {% else %}
+        <link rel="stylesheet" type="text/css" href="{% static "oscar/css/styles.css" %}" />
+    {% endif %}
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsee.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="{% static 'css/template-style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{% static 'js/jquery-1.8.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+{% endblock %}
+
+{% block layout %}
+    {# Top-horizontal bar with account, notifictions, dashboard links #}
+   
+
+    {# Site logo/title, mini-basket, browse dropdown and searchbox #}
+    <header class="header container-fluid">
+ 
+        {% block navigation %}
+        <nav class="background-white background-primary-hightlight">
+            <div class="line">
+              <div class="s-12 l-2">
+                <a href="index.html" class="logo"><img src="{% static 'img/logo.png' %}" alt=""></a>
+              </div>
+              <div class="top-nav s-12 l-10">
+                <p class="nav-text"></p>
+                <ul class="right chevron">
+                  <li><a href="{% url 'homepage'%}">Home</a></li>
+                  <li><a href="{% url 'catalogue:index' %}">Products</a></li>
+                  <li><a href="{% url 'story-map' %}">Map</a></li>
+                  <li><a href="{% url 'base' %}">Base</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        {% endblock %}
+    </header>
+
+
+
+{% endblock %}
+
+
+
+    
+
