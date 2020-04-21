@@ -32,9 +32,6 @@
             {% endif %}
             {% endblock %}
             <ul class="nav navbar-nav navbar-right">
-              <li><a href = "{% url 'homepage' %}">{% trans "Home" %}</a></li>
-              <li><a href="{% url 'story-map' %}">{% trans "Map" %}</a></li>
-              <li><a href="{% url 'catalogue:index' %}">{% trans "Catalogue" %}</a></li>
                 {% if user.is_authenticated %}
                 {% block nav_account_navbar_authenticated %}
                     <li>
