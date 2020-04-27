@@ -1,1 +1,1 @@
-web: gunicorn plant-babies.wsgi
+web: gunicorn plant_babies.wsgi
