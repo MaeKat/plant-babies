@@ -51,23 +51,116 @@
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
   }
+  li{
+    font-size: 12px;
+  }
+
+  .cd-header {
+    --header-height: 180px;
+    color: white;
+    height: 180px;
+    height: var(--header-height);
+    background-color: rgb(113, 197, 110);
+   
+}
+.flex-center {
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color:white;
+}
+.faq{
+    color:white;
+    font-size: 50px;
+}
   </style>
   </head>
+
+
   <body>
   
+    <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo"><img src="{% static 'img/logo.png' %}" alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="{% url 'homepage'%}">Home</a></li>
+              <li><a href="{% url 'catalogue:index' %}">Products</a></li>
+              <li><a href="{% url 'story-map' %}">Map</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="cd-header flex-center faq">
+        <div class="text-component text-center">
+        FAQ 
+        </div>
+        </header>
+        <br>
 
-  <button class="collapsible">Open Section 1</button>
+<h1> Indoor Plants </h1>
+  <button class="collapsible">Which indoor plants require low light?</button>
   <div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    There are several qualities to look for when selecting an indoor plant.
+    <ol>
+   <li> A good root system – This is incredibly important when choosing a plant. It’s not practical to pull a plant out of its pot to check its roots but if it is a small plant, this can be done. Healthy roots are thick and light in color.</li>
+    <li>Foliage- Here’s a good rule of thumb when it comes to plant’s foliage: if you can’t see through it, the foliage is thick enough.</li>
+    <li>Check for disease – Some signs of a plant with pests or disease are: white dots, sticky residue on the leaves and a bad odor.</li>
+   </ol>
   </div>
-  <button class="collapsible">Open Section 2</button>
+  <button class="collapsible">Which indoor plants require low light?</button>
   <div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    Indoor plants that need little light could be good fits for locations where light is more dim.
+    <ul>
+        <li>Philodendron – A very common indoor plant that rarely attracts pests. It’s a hearty plant that is adaptable to various environments</li>
+   <li> Pothos or Devil’s Ivy- A plant with colorful and vibrant leaves. This plant does great in a variety of environments, thriving in low light or in bright, indirect light.</li>
+   <li> Dracaena– This is another popular indoor plant with long green leaves. This is one indoor plant you will want to prune if foliage gets too long.</li>
+    <li>Peace Lily- This plant thrives best when the soil is moist, but not overwatered. If you want flowers to appear on your peace lily plant, move your plant to a darker room.</li>
+    </ul>
   </div>
-  <button class="collapsible">Open Section 3</button>
+  <button class="collapsible">Which indoor plants are the easiest to take care of?</button>
   <div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <ul>
+   <li> Sansevieria </li>
+   <li>Philodendron</li>
+    <li>Most succulents</li>
+    <li>Pothos</li>
+    <li>ZZ plant</li>
+</ul>
   </div>
+<br>
+  <h1>Common Pests</h1>
+  <button class="collapsible">Aphids</button>
+  <div class="content">
+    Several species of this sap-sucking, winged pest exist. You'll find aphids in green, black, yellow or red. They attack edible and ornamental plants, including garden roses, causing stunted growth, curling and yellowing leaves, and a honeydew buildup that leads to black, sooty mold. Honeydew produced by aphids attracts ants as well, so include them in your treatment plan.
+  </div>
+  <button class="collapsible">Japanese Beetles</button>
+  <div class="content">
+    Notorious for skeletonizing leaves of a wide variety of edible and ornamental plants, Japanese beetles have iridescent copper wings and a metallic-green thorax and head. Underneath they have small tufts of white hairs along the sides of their abdomens. The eggs are white or cream-colored. The slightly curved larvae, also known as grubs, are gray-white with brown heads
+  </div>
+  <button class="collapsible">Scale</button>
+  
+  <div class="content">
+    Circular, armor-like insects, scale are found on the stems of plants and the underside of leaves, and they often look like a part of the plant. They suck plant sap, creating honeydew and attracting ants, which require management as well.
+  </div>
+
+
+  <section class="padding background-dark">
+    <div class="line">
+      <div class="s-12 l-6">
+        <p class="text-size-12"></p>
+        <p class="text-size-12">.</p>
+      </div>
+      <div class="s-12 l-6">
+      </div>
+    </div>
+  </section>
+</footer>
+
   
   <script>
   var coll = document.getElementsByClassName("collapsible");
