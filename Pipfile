@@ -11,6 +11,7 @@ django-oscar = "*"
 pycountry = "*"
 djangocms-installer = "*"
 sorl-thumbnail = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8.2"
