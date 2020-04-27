@@ -40,11 +40,8 @@
               <div class="top-nav s-12 l-10">
                 <p class="nav-text"></p>
                 <ul class="right chevron">
-                  <li><a href="{% url 'homepage'%}">Home</a></li>
-                  <li><a href="{% url 'catalogue:index' %}">Products</a></li>
-                  <li><a href="{% url 'story-map' %}">Map</a></li>
-                  <li><a href="{% url 'base' %}">FAQ</a></li>
-                  
+
+
                 </ul>
               </div>
             </div>
@@ -53,5 +50,5 @@
     </header>
 
 
-
+{% include "oscar/partials/search.html" %}
 {% endblock %}
