@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BR Backyard - FAQ</title>
     <link rel="stylesheet" href="{% static 'css/components.css' %}">
-    <link rel="stylesheet" href="{% static 'css/icons.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsee.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
@@ -39,11 +38,11 @@
     outline: none;
     font-size: 15px;
   }
-  
+
   .active, .collapsible:hover {
     background-color: rgb(43, 85, 45);
   }
-  
+
   .content {
     padding: 0 18px;
     max-height: 0;
@@ -165,7 +164,7 @@
   <script>
   var coll = document.getElementsByClassName("collapsible");
   var i;
-  
+
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
@@ -174,12 +173,12 @@
         content.style.maxHeight = null;
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
-      } 
+      }
     });
   }
   </script>
-  
+
   </body>
   </html>
-  
+
   {% endblock%}

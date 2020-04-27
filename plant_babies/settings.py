@@ -103,6 +103,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'oscar.apps.basket.middleware.BasketMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'plant_babies.urls'
@@ -192,11 +193,10 @@ USE_L10N = True
 USE_TZ = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-location = lambda x: os.path.join(
-os.path.dirname(os.path.realpath(__file__)), x)
 
 location = lambda x: os.path.join(
 os.path.dirname(os.path.realpath(__file__)), x)
@@ -209,5 +209,3 @@ THUMBNAIL_DEBUG = True
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'statics'),
 ]
-
-
