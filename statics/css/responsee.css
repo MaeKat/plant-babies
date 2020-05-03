@@ -39,7 +39,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 a:hover {color:#B6C900;}
 p,li,dl,blockquote,table,kbd {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1.6;
 }
 b,strong {font-weight:700;}

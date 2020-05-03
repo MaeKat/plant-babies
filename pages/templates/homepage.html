@@ -17,8 +17,8 @@
     <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="{% static 'css/template-style.css' %}">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="{% static 'js/jquery-1.8.3.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/jquery-1.8.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/jquery-ui.min.js' %}"></script>
   </head>
   {% include "oscar/partials/nav_accounts.html" %}
   <body class="">
@@ -47,12 +47,6 @@
           </div>
           <div class="top-nav s-12 l-10">
             <p class="nav-text"></p>
-            <ul class="right chevron">
-              <li><a href="{% url 'homepage'%}">Home</a></li>
-              <li><a href="{% url 'catalogue:index' %}">Products</a></li>
-              <li><a href="{% url 'story-map' %}">Map</a></li>
-              <li><a href="{% url 'base' %}">FAQ</a></li>
-            </ul>
           </div>
         </div>
       </nav>
@@ -230,9 +224,9 @@
         </div>
       </section>
     </footer>
-    <script type="text/javascript" src="{% static 'js/responsee.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/owl.carousel.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/template-scripts.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/responsee.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/owl.carousel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/template-scripts.js' %}"></script>
    </body>
 </html>
 {% endblock%}
